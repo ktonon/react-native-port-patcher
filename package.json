@@ -1,0 +1,11 @@
+{
+  "name": "react-native-port-patcher",
+  "version": "1.0.0",
+  "description": "Replace all instances of hard coded port 8081 in react-native package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
