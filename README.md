@@ -1,8 +1,6 @@
 react-native-port-patcher
 =========================
 
-__- - - Work in progress - - -__
-
 Attempts to resolve this issue: https://productpains.com/post/react-native/allow-packager-port-to-be-configurable-change-from-8081/
 
 ## HowTo
@@ -17,7 +15,7 @@ Then update your `package.json` to include:
 
 ```js
   "scripts": {
-    "postinstall": "react-native-port-patcher --port 8088"
+    "postinstall": "react-native-port-patcher --new-port 8088"
   }
 ```
 
