@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "Replace all instances of hard coded port 8081 in react-native package",
   "main": "index.js",
+  "bin": {
+    "react-native-port-patcher": "./bin/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "^3.0.5"
+  }
 }
