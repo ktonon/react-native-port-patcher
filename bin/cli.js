@@ -6,7 +6,7 @@ const sysPath = require('path');
 const replacePort = require('..');
 
 const options = commandLineArgs([
-  { name: 'path', type: String, defaultValue: `${__dirname}/../../node_modules/react-native`},
+  { name: 'path', type: String, defaultValue: `${__dirname}/../../react-native`},
   { name: 'new-port', type: Number, defaultValue: 8088 },
   { name: 'old-port', type: Number, defaultValue: 8081 },
 ]);
