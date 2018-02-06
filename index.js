@@ -16,7 +16,7 @@ module.exports = function(path, oldPort, newPort) {
 
   console.log(`Replacing react-native hard coded port ${oldPort} with ${newPort}...`);
   walkSync(path,
-    /\.(m|h|js|java|pbxproj)$/,
+    /\.(m|h|js|java|pbxproj|cs)$/,
     (file) => {
       const content = fs.readFileSync(file, 'utf8');
       if (portPattern.test(content)) {
