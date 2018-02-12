@@ -34,7 +34,7 @@ function isReactNative(path) {
   }
   try {
     const pkg = JSON.parse(fs.readFileSync(`${path}/package.json`));
-    if (pkg.name !== 'react-native') {
+    if (pkg.name !== 'react-native' && pkg.name != 'react-native-windows') {
       console.error(`Not react-native:\n${path}\n`);
       return false;
     }
