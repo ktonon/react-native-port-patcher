@@ -6,7 +6,7 @@ const sysPath = require('path');
 const replacePort = require('..');
 
 const options = commandLineArgs([
-  { name: 'path', multiple: true, defaultValue: [
+  { name: 'path', type: String, multiple: true, defaultValue: [
     `${__dirname}/../../react-native`,
     `${__dirname}/../../@react-native-community`
   ]},
