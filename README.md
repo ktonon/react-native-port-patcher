@@ -19,6 +19,6 @@ Then update your `package.json` to include:
   }
 ```
 
-Now after you [yarn][] or `npm install`, the script will find your `react-native` package under `node_modules` and regex search/replace all instances of `/\b8081\b/g` with the port you provide.
+Now after you [yarn][] or `npm install`, the script will find your `react-native` package and @react-native-community projects under `node_modules` and regex search/replace all instances of `/\b8081\b/g` with the port you provide.
 
 [yarn]:https://yarnpkg.com/en/
