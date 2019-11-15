@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 function walkSync(dir, pattern, cb) {
   fs.readdirSync(dir).forEach(function(file) {
@@ -11,12 +12,12 @@ function walkSync(dir, pattern, cb) {
   });
 }
 
-module.exports = function(path, oldPort, newPort) {
+module.exports = function(packagePath, oldPort, newPort) {
   const portPattern = new RegExp(`\\b${oldPort}\\b`, 'g');
 
-  console.log(`Replacing react-native hard coded port ${oldPort} with ${newPort}...`);
-  walkSync(path,
-    /\.(m|h|js|java|pbxproj|cs)$/,
+  console.log(`Replacing ${path.basename(packagePath)} hard coded port ${oldPort} with ${newPort}...`);
+  walkSync(packagePath,
+    /\.(m|h|js|java|pbxproj|cs|ts)$/,
     (file) => {
       const content = fs.readFileSync(file, 'utf8');
       if (portPattern.test(content)) {
