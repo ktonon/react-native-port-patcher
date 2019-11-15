@@ -1,7 +1,7 @@
 {
   "name": "react-native-port-patcher",
-  "version": "1.0.3",
-  "description": "Replace all instances of hard coded port 8081 in react-native package",
+  "version": "1.0.4",
+  "description": "Replace all instances of hard coded port 8081 in react-native and @react-native-community packages",
   "main": "index.js",
   "bin": {
     "react-native-port-patcher": "./bin/cli.js"
