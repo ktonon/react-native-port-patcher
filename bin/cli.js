@@ -43,6 +43,7 @@ function isReactNative(path) {
     const pkg = JSON.parse(fs.readFileSync(`${path}/package.json`));
     if (pkg.name !== 'react-native' &&
         pkg.name !== 'react-native-windows' &&
+        pkg.name !== 'react-native-macos' &&
         !pkg.name.startsWith('@react-native-community/')
     ) {
       console.error(`Not react-native or @react-native-community:\n${path}\n`);
